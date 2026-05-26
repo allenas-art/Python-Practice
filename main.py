@@ -1,4 +1,6 @@
-if 5 < 10:
-    pass
+name = 'Paul'
+age = 15
+print(f'{name} is {age}')
+
 
 

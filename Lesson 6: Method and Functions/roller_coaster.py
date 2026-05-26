@@ -5,18 +5,20 @@
 
 # Get input
 age = input("How old are you?")
-if age <= 10: 
+if int(age) <= 10: 
     print("You are too young")
-else age > 10: 
+else:
     print(" You are old enough")
     height = input(" How tall are you in centimeters?")
-    if height <= 150:
+    if int(height) <= 150:
         print(" You are not tall enough")
-    else height > 150 
+    else:
         print("you are tall enough")
         Condition = input("Do you have a heart condition?")
-        if Condition == 
-
+        if Condition == "yes":
+            print("You cannot ride the roller coaster")
+        else:
+            print("You can ride!!")
 
 
 # Check conditions and output verdict

@@ -1,7 +1,7 @@
 #Intro and asking for user name
-print("Hello and welcome to the ultimate solar system quiz.")
-print("We will be launching across the solar system learning about each planet")
-name = input("But first what is your name?")
+print("Hello and welcome to the Dinosaur quiuz.")
+print("We will be using this time machine here to learn all about the dinosaurs thorugh a quiz (No it is not a rocket ship).")
+name = input("But before we go what is your name?")
 
 print(r"       \\=====\\ "                                      )
 print(r"        \\      \\  "                                   )                                                                                             
@@ -32,3 +32,14 @@ print(r"                                 VqpqpqpqpW            ")
 print(r"                                    WqpqpqW           " )
 print(r"                                       WqppW         "  )
 print(r"                                           W       "    )
+
+print(f'Now off we go {name} all the way back to the time of the dinosaurs')
+a1 = input('Now to activate the time machine just enter here how many millions of years ago (in numbers) ' \
+'that the dinosaurs began their rule of the world')
+if int(a1) >= 225 and int(a1) <= 275:
+    print("Correct! Wow that was impresive, I'll have to make it harder then.")
+    a2 = input("now do you know which of the three periods that was?")
+    if 
+else:
+    print("Incorrect! The answer was 250(million years ago), unfortunate, but I'm sure you'll get the next one")
+    input(`                                                                                                                                                                         `)
