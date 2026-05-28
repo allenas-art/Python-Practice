@@ -1,5 +1,5 @@
 #Intro
-QUESTIONS = 2
+QUESTIONS = 3
 print("Hello and welcome to the Dinosaur quiz.")
 print(f"We will be using a time machine to go back to the age of dinosaurs and learn all we can through a quiz of {QUESTIONS} questions.")
 
@@ -9,12 +9,12 @@ name = input("But before I show you the time machine and we head out, I have to 
 
 #Ascii Art
 print(r"       \\=====\\ "                                      )
-print(r"        \\      \\  "                                   )                                                                                             
+print(r"        \\      \\  "                                   ) 
 print(r"        \\ {   }  \\  "                                 )                                                                                              
 print(r"        \\           \\  "                              )                                                                                              
 print(r"         ================   "                           )                                                                                                 
-print(r"          \\             \\   "                         )                                                                                   
-print(r"           \\             \\   "                        )                                                                                                                                
+print(r"          \\             \\   "                         ) 
+print(r"           \\             \\ "                        )                                                                                                                                
 print(r"            \\     // \\   \\   "                       )                                                                                                                        
 print(r"             \\   {{   }}   \\   "                      )                                                                                                                                   
 print(r"              \\   {{    }}  \\   "                     )                                                                                                                                    
@@ -94,23 +94,47 @@ else:
     else:
         print("That's not even one of the options, I told you to type a letter!")
 
-print("Now we are going to job forward to 150 million years ago in the Jurassic.")
-print("Look to the skies and yrg might see something like this:")
-print(r"                           <\              _
-                            \\          _/{
-                     _       \\       _-   -_
-                   /{        / `\   _-     - -_
-                 _~  =      ( @  \ -        -  -_
-               _- -   ~-_   \( =\ \           -  -_
-             _~  -       ~_ | 1 :\ \      _-~-_ -  -_
-           _-   -          ~  |V: \ \  _-~     ~-_-  -_
-        _-~   -            /  | :  \ \            ~-_- -_
-     _-~    -   _.._      {   | : _-``               ~- _-_
-  _-~   -__..--~    ~-_  {   : \:}
-=~__.--~~              ~-_\  :  /
-                           \ : /__
-                          //`Y'--\\
-                         <+       \\
-                          \\      WWW
-                          MMM.            ")
+#Question 3
 
+print("Now we are going to jump forward to 150 million years ago in the Jurassic.")
+print("Look to the skies and you might see something like this:")
+print("                       <\             _                   " 
+"                              \\          _/{                   " 
+"                       _       \\       _-   -_                 "
+"                     /{        / `\   _-     - -_               "
+"                   _~  =      ( @  \ -        -  -_             "
+"                 _- -   ~-_   \( =\ \           -  -_           "
+"               _~  -       ~_ | 1 :\ \      _-~-_ -  -_         "
+"             _-   -          ~  |V: \ \  _-~     ~-_-  -_       "
+"          _-~   -            /  | :  \ \            ~-_- -_     "
+"       _-~    -   _.._      {   | : _-``               ~- _-_   "
+"    _-~   -__..--~    ~-_  {   : \:}                            "
+"  =~__.--~~              ~-_\  :  /                             "
+"                             \ : /__                            "
+"                            //`Y'--\\                           "
+"                          <+       \\                           "
+"                           \\      WWW                          "
+"                            MMM                                 ")
+
+print("This is called a Pterasaur and is one earliest creatures to develope flight (not counting bugs)")
+a3=input("True or False, Pterasaurs are also called Avian-Dinosaurs (Dinosaurs that can fly)")
+
+#Results for correct answer to question 3
+
+if a3.strip() and a3.lower() == "false":
+    print("Correct! well done. Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
+
+#Results for incorrect answer to question 3
+
+elif a3.strip() and a3.lower() == "true":
+    print("Incorrect! Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
+
+#Results for n/a answer to question 3
+
+else:
+    print("Incorrect! You have to answer true or false!")
+    a3=input("True or False, Pterasaurs are also called Avian-Dinosaurs (Dinosaurs that can fly)")
+    if a3.strip() and a3.lower() == "false":
+        print("Correct! well done. Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
+    elif a3.strip() and a3.lower() == "true":
+        print("Incorrect! Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
