@@ -1,5 +1,6 @@
 #Intro
 QUESTIONS = 3
+score = 0
 print("Hello and welcome to the Dinosaur quiz.")
 print(f"We will be using a time machine to go back to the age of dinosaurs and learn all we can through a quiz of {QUESTIONS} questions.")
 
@@ -47,19 +48,19 @@ a1 = input("To activate the time machine just enter here how many millions of ye
 that the dinosaurs began their rule of the world (for example type 100 for 100 million years)")
 
     #Results for correct answers to first question
-
-if int(a1) >= 225 and int(a1) <= 275:
+ 
+if float(a1) >= 225 and float(a1) <= 275:
     print("Correct! Wow that was impresive, I'll have to make it harder then.")
-
+    score + 1
     #Second Question if first question is correct
 
     a21 = input("Now do you know which of the three periods of the Mezosoic era we have arrived in 250 million years in the past?")
-    if a21.strip() and a21.lower() == "triassic":
+    if a21.strip().lower() == "triassic" :
     
         #Results for correct answer to second & first question 
 
         print("Correct! Nice job that's two in a row.")
-    
+        score + 1
         #Results for incorrect answer to second question if correct for first question
     else:
         print("Incorrect, the answer was Triassic, then comes the Jurassic, and Cretaceous. Oh well you couldn't get a streak going.")
@@ -76,26 +77,36 @@ else:
 
         #Results for correct answer to second question if incorrect for first question
 
-    if a22.strip() and a22.lower() == "a":
+    if a22.strip().lower() == "a":
         print("Correct! Nice job! made up for the first question.")
-
+        score + 1
         #Results for first incorrect answer to second question if incorrect for first question
 
-    elif a22.strip() and a22.lower() == "b":
+    elif a22.strip().lower() == "b":
         print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
 
         #Results for second incorrect answer to second question if incorrect for first question
-
-    elif a22.strip() and a22.lower() == "c":
+    elif a22.strip().lower() == "c":
         print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
 
         #Results for n/a answer to second question if incorrect for first question
 
     else:
-        print("That's not even one of the options, I told you to type a letter!")
+        print("That's not even one of the options, I told you to type a letter! I'll give you one more try.")
+        a23 = input("Okay, try again. Do you know which came first? a. The Triassic, b. The Cretaceous, c. The Jurassic (Answer with a, b, or c, only!)")
+
+        #Results for correct answer to second question if incorrect for first question
+        if a23.strip().lower() == "a":
+            print("Correct! Nice job! made up for the first question.")
+            score + 1
+        elif a22.strip().lower() == "b":
+            print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
+        elif a22.strip().lower() == "c":
+            print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
 
 #Question 3
 
+input("Are you ready for question 3?")
 print("Now we are going to jump forward to 150 million years ago in the Jurassic.")
 print("Look to the skies and you might see something like this:")
 print("                             <\             _                   " )
@@ -121,12 +132,13 @@ a3=input("True or False, Pterasaurs are also called Avian-Dinosaurs (Dinosaurs t
 
 #Results for correct answer to question 3
 
-if a3.strip() and a3.lower() == "f" or "false":
+if a3.strip().lower() == "f" or a3.strip().lower() == "false":
     print("Correct! well done. Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
+    score + 1
 
 #Results for incorrect answer to question 3
 
-elif a3.strip() and a3.lower() == "t" or "true":
+elif a3.strip().lower() == "t" or a3.strip().lower == "true":
     print("Incorrect! Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
 
 #Results for n/a answer to question 3
@@ -134,11 +146,12 @@ elif a3.strip() and a3.lower() == "t" or "true":
 else:
     print("Incorrect! You have to answer true or false!")
     a3=input("True or False, Pterasaurs are also called Avian-Dinosaurs (Dinosaurs that can fly)")
-    if a3.strip() and a3.lower() == "false":
+    if a3.strip().lower() == "f" or a3.strip().lower() == "false":
         print("Correct! well done. Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
-    elif a3.strip() and a3.lower() == "true":
+        score + 1
+    else:
         print("Incorrect! Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
 
-#Ending
 
-print("And thats the end of the dinosaur quiz!")
+
+print(f"And thats the end of the dinosaur quiz! your score was {score}/3")
