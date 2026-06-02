@@ -98,35 +98,35 @@ else:
 
 print("Now we are going to jump forward to 150 million years ago in the Jurassic.")
 print("Look to the skies and you might see something like this:")
-print("                       <\             _                   " 
-"                              \\          _/{                   " 
-"                       _       \\       _-   -_                 "
-"                     /{        / `\   _-     - -_               "
-"                   _~  =      ( @  \ -        -  -_             "
-"                 _- -   ~-_   \( =\ \           -  -_           "
-"               _~  -       ~_ | 1 :\ \      _-~-_ -  -_         "
-"             _-   -          ~  |V: \ \  _-~     ~-_-  -_       "
-"          _-~   -            /  | :  \ \            ~-_- -_     "
-"       _-~    -   _.._      {   | : _-``               ~- _-_   "
-"    _-~   -__..--~    ~-_  {   : \:}                            "
-"  =~__.--~~              ~-_\  :  /                             "
-"                             \ : /__                            "
-"                            //`Y'--\\                           "
-"                          <+       \\                           "
-"                           \\      WWW                          "
-"                            MMM                                 ")
+print("                             <\             _                   " )
+print("                              \\          _/{                   " )
+print("                       _       \\       _-   -_                 ")
+print("                     /{        / `\   _-     - -_               ")
+print("                   _~  =      ( @  \ -        -  -_             ")
+print("                 _- -   ~-_   \( =\ \           -  -_           ")
+print("               _~  -       ~_ | 1 :\ \      _-~-_ -  -_         ")
+print("             _-   -          ~  |V: \ \  _-~     ~-_-  -_       ")
+print("          _-~   -            /  | :  \ \            ~-_- -_     ")
+print("       _-~    -   _.._      {   | : _-``               ~- _-_   ")
+print("    _-~   -__..--~    ~-_  {   : \:}                            ")
+print("  =~__.--~~              ~-_\  :  /                             ")
+print("                             \ : /__                            ")
+print("                            //`Y'--\\                           ")
+print("                          <+       \\                           ")
+print("                           \\      WWW                          ")
+print("                            MMM                                 ")
 
-print("This is called a Pterasaur and is one earliest creatures to develope flight (not counting bugs)")
+print("This is called a Pterasaur and is one earliest creatures to develop flight (not counting bugs)")
 a3=input("True or False, Pterasaurs are also called Avian-Dinosaurs (Dinosaurs that can fly)")
 
 #Results for correct answer to question 3
 
-if a3.strip() and a3.lower() == "false":
+if a3.strip() and a3.lower() == "f" or "false":
     print("Correct! well done. Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
 
 #Results for incorrect answer to question 3
 
-elif a3.strip() and a3.lower() == "true":
+elif a3.strip() and a3.lower() == "t" or "true":
     print("Incorrect! Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
 
 #Results for n/a answer to question 3
@@ -138,3 +138,7 @@ else:
         print("Correct! well done. Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
     elif a3.strip() and a3.lower() == "true":
         print("Incorrect! Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
+
+#Ending
+
+print("And thats the end of the dinosaur quiz!")
