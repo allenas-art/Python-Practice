@@ -6,103 +6,107 @@ print(f"We will be using a time machine to go back to the age of dinosaurs and l
 
 #Recording users name
 
-name = input("But before I show you the time machine and we head out, I have to know, what is your name?")
+name = input("But before I show you the time machine and we head out, I have to know, what is your name? ")
 
 #Ascii Art
 print(r"       \\=====\\ "                                      )
-print(r"        \\      \\  "                                   ) 
-print(r"        \\ {   }  \\  "                                 )                                                                                              
-print(r"        \\           \\  "                              )                                                                                              
-print(r"         ================   "                           )                                                                                                 
-print(r"          \\             \\   "                         ) 
-print(r"           \\             \\ "                        )                                                                                                                                
-print(r"            \\     // \\   \\   "                       )                                                                                                                        
-print(r"             \\   {{   }}   \\   "                      )                                                                                                                                   
-print(r"              \\   {{    }}  \\   "                     )                                                                                                                                    
-print(r"               \\   {{   }}   \\   "                    )                                                                                                                                  
-print(r"                \\    \\ //    \\   "                   )                                                                                                                                      
-print(r"                 \\             \\   "                  )                                                                                                                                       
-print(r"                  \\             \\   "                 )                                                                                                                                     
-print(r"                   \\=============\\  "                 )                                                                                                                                        
-print(r"                    ||              \\   "              )                                                                                                                                     
-print(r"                    ||                \\    "           )                                                                                                                                       
-print(r"                    ||  VqpqpqpqpqpqV   \\    "         )                                                                                                                                        
-print(r"                    || VqpqpqpqqpqpqpqpV  \\    "       )                                                                                                                                         
-print(r"                    || VqpqpqpqpqpqpqpqpqV  \\    "     )                                                                                                                                        
-print(r"                    ||  VqpqpqpqpqpqpqpqpqpV  \\    "   )                                                                                                                                           
-print(r"                        VqpqpqpqpqpqpqpqpqpqV        "  )                                                                                                                                             
-print(r"                          VqpqpqpqqpqpqpqpqpqW        " )                                                                                                                                            
-print(r"                            WqpqpqpqpqpqpqpqW          ")                                                                                                                                                
-print(r"                               WqpqpqpqpqpqV           ")                                                                                                                                                 
-print(r"                                 VqpqpqpqpW            ")                                                                                                                    
+print(r"        \\      \\  "                                   )
+print(r"        \\ {   }  \\  "                                 )
+print(r"        \\           \\  "                              )
+print(r"         ================   "                           )
+print(r"          \\             \\   "                         )
+print(r"           \\             \\ "                        )
+print(r"            \\     // \\   \\   "                       )
+print(r"             \\   {{   }}   \\   "                      )
+print(r"              \\   {{    }}  \\   "                     )
+print(r"               \\   {{   }}   \\   "                    )
+print(r"                \\    \\ //    \\   "                   )
+print(r"                 \\             \\   "                  )
+print(r"                  \\             \\   "                 )
+print(r"                   \\=============\\  "                 )
+print(r"                    ||              \\   "              )
+print(r"                    ||                \\    "           )
+print(r"                    ||  VqpqpqpqpqpqV   \\    "         )
+print(r"                    || VqpqpqpqqpqpqpqpV  \\    "       )
+print(r"                    || VqpqpqpqpqpqpqpqpqV  \\    "     )
+print(r"                    ||  VqpqpqpqpqpqpqpqpqpV  \\    "   )
+print(r"                        VqpqpqpqpqpqpqpqpqpqV        "  )
+print(r"                          VqpqpqpqqpqpqpqpqpqW        " )
+print(r"                            WqpqpqpqpqpqpqpqW          ")
+print(r"                               WqpqpqpqpqpqV           ")
+print(r"                                 VqpqpqpqpW            ")
 print(r"                                    WqpqpqW           " )
 print(r"                                       WqppW         "  )
 print(r"                                           W       "    )
 
 print("No this is not a rocket ship it is a time machine.")
 
-#First Question 
+#First Question
 
 print(f'Now off we go {name} all the way back to the time of the dinosaurs')
-a1 = input("To activate the time machine just enter here how many millions of years ago (in numbers) \
-that the dinosaurs began their rule of the world (for example type 100 for 100 million years)")
 
+a1 = input("To activate the time machine just enter here how many millions of years ago (in numbers)"
+    "that the dinosaurs began their rule of the world (for example type 100 for 100 million years) ")
+
+if not isinstance (int(a1), int):
+    print("Try again enter a number this time")
+if isinstance (int(a1), int):
     #Results for correct answers to first question
- 
-if float(a1) >= 225 and float(a1) <= 275:
-    print("Correct! Wow that was impresive, I'll have to make it harder then.")
-    score + 1
+  
+    if int(a1) >= 225 and int(a1) <= 275:
+        print("Correct! Wow that was impresive, I'll have to make it harder then.")
+        score + 1
     #Second Question if first question is correct
 
-    a21 = input("Now do you know which of the three periods of the Mezosoic era we have arrived in 250 million years in the past?")
-    if a21.strip().lower() == "triassic" :
-    
-        #Results for correct answer to second & first question 
+        a21 = input("Now do you know which of the three periods of the Mezosoic era we have arrived in 250 million years in the past?")
+        if a21.strip().lower() == "triassic" :
 
-        print("Correct! Nice job that's two in a row.")
-        score + 1
+        #Results for correct answer to second & first question
+
+            print("Correct! Nice job that's two in a row.")
+            score + 1
         #Results for incorrect answer to second question if correct for first question
-    else:
-        print("Incorrect, the answer was Triassic, then comes the Jurassic, and Cretaceous. Oh well you couldn't get a streak going.")
+        else:
+            print("Incorrect, the answer was Triassic, then comes the Jurassic, and Cretaceous. Oh well you couldn't get a streak going.")
 
     #Results for incorrect answer to first question
 
-else:
-    print("Incorrect! The answer was 250(million years ago), unfortunate, but that was a hard one I'm sure you'll get it next time")
+    else:
+        print("Incorrect! The answer was 250(million years ago), unfortunate, but that was a hard one I'm sure you'll get it next time")
 
     #Second Question (if first question is incorrect)
 
-    a22 = input("Okay, we've arrived 250 million years in the past into a time called the Mesozoic Era, the time of the dinosaurs." 
-    "The Mesozoic Era is divided into three periods, do you know which came first? a. The Triassic, b. The Cretaceous, c. The Jurassic (Answer with a, b, or c, only!)")
+        a22 = input("Okay, we've arrived 250 million years in the past into a time called the Mesozoic Era, the time of the dinosaurs."
+        "The Mesozoic Era is divided into three periods, do you know which came first? a. The Triassic, b. The Cretaceous, c. The Jurassic (Answer with a, b, or c, only!)")
 
         #Results for correct answer to second question if incorrect for first question
 
-    if a22.strip().lower() == "a":
-        print("Correct! Nice job! made up for the first question.")
-        score + 1
+        if a22.strip().lower() == "a":
+            print("Correct! Nice job! made up for the first question.")
+            score + 1
         #Results for first incorrect answer to second question if incorrect for first question
 
-    elif a22.strip().lower() == "b":
-        print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
+        elif a22.strip().lower() == "b":
+            print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
 
         #Results for second incorrect answer to second question if incorrect for first question
-    elif a22.strip().lower() == "c":
-        print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
+        elif a22.strip().lower() == "c":
+            print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
 
         #Results for n/a answer to second question if incorrect for first question
 
-    else:
-        print("That's not even one of the options, I told you to type a letter! I'll give you one more try.")
-        a23 = input("Okay, try again. Do you know which came first? a. The Triassic, b. The Cretaceous, c. The Jurassic (Answer with a, b, or c, only!)")
+        else:
+            print("That's not even one of the options, I told you to type a letter! I'll give you one more try.")
+            a23 = input("Okay, try again. Do you know which came first? a. The Triassic, b. The Cretaceous, c. The Jurassic (Answer with a, b, or c, only!)")
 
         #Results for correct answer to second question if incorrect for first question
-        if a23.strip().lower() == "a":
-            print("Correct! Nice job! made up for the first question.")
-            score + 1
-        elif a22.strip().lower() == "b":
-            print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
-        elif a22.strip().lower() == "c":
-            print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
+            if a23.strip().lower() == "a":
+                print("Correct! Nice job! made up for the first question.")
+                score + 1
+            elif a22.strip().lower() == "b":
+                print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
+            elif a22.strip().lower() == "c":
+                print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
 
 #Question 3
 
