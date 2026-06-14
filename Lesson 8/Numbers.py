@@ -19,17 +19,13 @@ print("Hello, guess my number")
 guess = input("Whats your guess ")
 # START THE GAME
 # TODO: Start a 'while' loop that keeps running AS LONG AS the 
-while guess != number:
+while int(guess) != int(number):
     if int(guess) < int(number):
         guess = input("Higher, try again ")
-    elif int(guess) > int(number): 
-        guess = input("Lower, try again ")
-    if int(guess) == int(number):
-        print("nice job")
-        print("You guessed the number!")
-
-
-
+    elif int(guess) > int(number):
+        guess = input("Lower, try again ")   
+print("nice job")
+print("You guessed the number!")
 # GAME OVER / WINNING MESSAGE
 # TODO: Print a big victory message telling them they got it right!
 
