@@ -1,3 +1,11 @@
+#TODO
+#All Questions in function (Question differenced solved with try and except of correct answer)
+#All questions in list (when question asked grabed from list)
+#loop whole quiz
+#Use in
+
+
+
 #Intro
 QUESTIONS = 3
 score = 0
