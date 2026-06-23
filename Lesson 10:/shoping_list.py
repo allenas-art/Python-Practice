@@ -19,7 +19,7 @@ while True:
     print(f"{shoping_cart} {price_list} ")
     # TODO Output Options for user: 1. Add item to cart, 2. Remove item from cart, 3. Clear cart and restart, 4. View total and checkout
     # TODO Get user input (1-4) and save in variable
-    user_input = input("Press 1 for  Add item to cart, 2 for Remove item from cart, 3 for Clear cart and restart, 4 for View total and checkout")
+    user_input = input("Press 1 for  Add item to cart, 2 for Remove item from cart, 3 for Clear cart and restart, 4 for View total and checkout ")
     # -----------------------------------------------------------------
     # OPTION 1: ADD ITEM 
     # -----------------------------------------------------------------
@@ -29,10 +29,14 @@ while True:
         # TODO Ask user for price of item
         # TODO Change price into a float
         # TODO Add price to price list
-    if user_input == 1:
-        addition = input("What item would you like to add")
-        price 
-
+    if user_input == "1":
+        add_item = input("What item would you like to add ")
+        shoping_cart.append(add_item)
+        add_price = input("What is the price of that item ")
+        add_price = float(add_price)
+        price_list.append(add_price)
+        
+   
     # -----------------------------------------------------------------
     # OPTION 2: REMOVE ITEM 
     # -----------------------------------------------------------------
@@ -41,7 +45,7 @@ while True:
         # TODO Use .index() to get the index of the item and save in variable
         # TODO Remove the item from cart
         # TODO Remove the price (using its index) from the price list
-
+    if user_input == "2":
 
     # -----------------------------------------------------------------
     # OPTION 3: CLEAR CART (Practice clearing a list)
