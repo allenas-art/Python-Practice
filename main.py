@@ -1,9 +1,8 @@
-user_input = 'idk'
-try:
-    num = int(user_input)
-    print(f'You picked {num}')
-except:
-	print(f'{user_input} is not a number!')
+foods = ['apples','carrots','muesli']
+for i in range(len(foods)):
+    print(f'{i+1}.{foods[i]}')
+
+
 
 
 
