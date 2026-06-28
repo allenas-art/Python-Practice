@@ -41,36 +41,35 @@ def question_1(name):
     global score
 
        #Ascii Art
-
-    print("       \\=====\\ \n"                                      
-         "        \\      \\  \n"                                   
-         "        \\ {   }  \\  \n"                                 
-         "        \\           \\  \n"                              
-         "         ================   \n"                           
-         "          \\             \\   \n"                         
-         "           \\             \\   \n"                          
-         "            \\     // \\   \\    \n"                       
-         "             \\   {{   }}   \\   \n"                      
-         "              \\   {{    }}  \\   \n"                     
-         "               \\   {{   }}   \\   \n"                    
-         "                \\    \\ //    \\    \n"                   
-         "                 \\             \\   \n"                  
-         "                  \\             \\   \n"                 
-         "                   \\=============\\   \n"                 
-         "                    ||              \\   \n"              
-         "                    ||                \\    \n"           
-         "                    ||  VqpqpqpqpqpqV   \\    \n"         
-         "                    || VqpqpqpqqpqpqpqpV  \\    \n"       
-         "                    || VqpqpqpqpqpqpqpqpqV  \\    \n"     
-         "                    ||  VqpqpqpqpqpqpqpqpqpV  \\    \n"   
-         "                        VqpqpqpqpqpqpqpqpqpqV        \n"  
-         "                          VqpqpqpqqpqpqpqpqpqW        \n" 
-         "                            WqpqpqpqpqpqpqpqW         \n "
-         "                               WqpqpqpqpqpqV          \n"
-         "                                 VqpqpqpqpW            \n"
-         "                                    WqpqpqW           \n" 
-         "                                       WqppW         \n"  
-         "                                           W       \n")    
+    print(r"       \\=====\\ " )                                     
+    print(r"        \\      \\  ")                                   
+    print(r"        \\ {   }  \\  ")                                 
+    print(r"        \\           \\  ")                              
+    print(r"         ================   ")                           
+    print(r"          \\             \\   ")                         
+    print(r"           \\             \\   ")                          
+    print(r"            \\     // \\   \\   ")                       
+    print(r"             \\   {{   }}   \\   ")                      
+    print(r"              \\   {{    }}  \\   ")                    
+    print(r"               \\   {{   }}   \\   ")                    
+    print(r"                \\    \\ //    \\   ")                   
+    print(r"                 \\             \\   ")                  
+    print(r"                  \\             \\   ")                 
+    print(r"                   \\=============\\   ")                 
+    print(r"                    ||              \\   ")              
+    print(r"                    ||                \\    ")           
+    print(r"                    ||  VqpqpqpqpqpqV   \\    ")         
+    print(r"                    || VqpqpqpqqpqpqpqpV  \\    ")       
+    print(r"                    || VqpqpqpqpqpqpqpqpqV  \\    ")     
+    print(r"                    ||  VqpqpqpqpqpqpqpqpqpV  \\    ")   
+    print(r"                        VqpqpqpqpqpqpqpqpqpqV        ")  
+    print(r"                          VqpqpqpqqpqpqpqpqpqW        ") 
+    print(r"                            WqpqpqpqpqpqpqpqW          ")
+    print(r"                               WqpqpqpqpqpqV           ")
+    print(r"                                 VqpqpqpqpW            ")
+    print(r"                                    WqpqpqW           ") 
+    print(r"                                       WqppW         ")  
+    print(r"                                           W       ")    
 
     print("No this is not a rocket ship it is a time machine.")
 
@@ -86,19 +85,22 @@ def question_1(name):
             a1 = int(a1)
             break
         except:
-            a1 = input("That's not a number try again ")
+            a1 = input("\n" 
+            "That's not a number try again ")
 
     #Results for correct answers to first question
   
     if int(a1) >= answers["q1_a1"] and int(a1) <= answers["q1_a2"]:
-        print("Correct! Wow that was impressive, I'll have to make it harder then.")
+        print("\n"
+              "Correct! Wow that was impressive, I'll have to make it harder then.")
         score += 1
         question_2_1()
 
     #Results for incorrect answer to first question
 
     else:
-        print("Incorrect! The answer was 250(million years ago), unfortunate, but that was a hard one I'm sure you'll get it next time")
+        print("\n"
+              "Incorrect! The answer was 250(million years ago), unfortunate, but that was a hard one I'm sure you'll get it next time")
         question_2_2()
 
 def question_2_1():
@@ -112,13 +114,15 @@ def question_2_1():
 
         #Results for correct answer to second & first question
 
-        print("Correct! Nice job that's two in a row.")
+        print("\n"
+              "Correct! Nice job that's two in a row.")
         score += 1
 
         #Results for incorrect answer to second question if correct for first question
 
     else:
-        print("Incorrect, the answer was Triassic, then comes the Jurassic, and Cretaceous. Oh well you couldn't get a streak going.")
+        print("\n"
+              "Incorrect, the answer was Triassic, then comes the Jurassic, and Cretaceous. Oh well you couldn't get a streak going.")
 
 def question_2_2():
 
@@ -126,7 +130,8 @@ def question_2_2():
 
     #Second Question (if first question is incorrect)
 
-    a22 = input("Okay, we've arrived 250 million years in the past into a time called the Mesozoic Era, the time of the dinosaurs. \n"
+    a22 = input("\n"
+                "Okay, we've arrived 250 million years in the past into a time called the Mesozoic Era, the time of the dinosaurs. \n"
     "The Mesozoic Era is divided into three periods, do you know which came first? \n"
         "a. The Triassic, \n"
         "b. The Cretaceous, \n "
@@ -139,7 +144,8 @@ def question_2_2():
         if a22.strip().lower() in ["a","b","c"]:
             break
         else:
-            a22 = input("That's not even one of the options, I told you to type a letter! I'll give you one more try. Do you know which came first? \n"
+            a22 = input("\n"
+                        "That's not even one of the options, I told you to type a letter! I'll give you one more try. Do you know which came first? \n"
             "a. The Triassic, \n"
             "b. The Cretaceous, \n"
             "c. The Jurassic \n"
@@ -149,17 +155,20 @@ def question_2_2():
     #Results for correct answer to second question while incorrect for first question
 
     if a22.strip().lower() == "a":
-        print("Correct! Nice job! made up for the first question.")
+        print("\n"
+              "Correct! Nice job! made up for the first question.")
         score += 1
     #Results for first incorrect answer to second question while incorrect for first question
 
     elif a22.strip().lower() == "b":
-        print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
+        print("\n"
+              "Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
 
     #Results for second incorrect answer to second question if incorrect for first question
 
     elif a22.strip().lower() == "c":
-        print("Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
+        print("\n"
+              "Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
 
 
 
@@ -172,23 +181,23 @@ def question_3():
     input("Are you ready for question 3? ")
     print("Now we are going to jump forward to 150 million years ago in the Jurassic.")
     print("Look to the skies and you might see something like this:")
-    print("                             <\             _                   " )
-    print("                              \\          _/{                   " )
-    print("                       _       \\       _-   -_                 ")
-    print("                     /{        / `\   _-     - -_               ")
-    print("                   _~  =      ( @  \ -        -  -_             ")
-    print("                 _- -   ~-_   \( =\ \           -  -_           ")
-    print("               _~  -       ~_ | 1 :\ \      _-~-_ -  -_         ")
-    print("             _-   -          ~  |V: \ \  _-~     ~-_-  -_       ")
-    print("          _-~   -            /  | :  \ \            ~-_- -_     ")
-    print("       _-~    -   _.._      {   | : _-``               ~- _-_   ")
-    print("    _-~   -__..--~    ~-_  {   : \:}                            ")
-    print("  =~__.--~~              ~-_\  :  /                             ")
-    print("                             \ : /__                            ")
-    print("                            //`Y'--\\                           ")
-    print("                          <+       \\                           ")
-    print("                           \\      WWW                          ")
-    print("                            MMM                                 ")
+    print(r"                             <\             _                   " )
+    print(r"                              \\          _/{                   " )
+    print(r"                       _       \\       _-   -_                 ")
+    print(r"                     /{        / `\   _-     - -_               ")
+    print(r"                   _~  =      ( @  \ -        -  -_             ")
+    print(r"                 _- -   ~-_   \( =\ \           -  -_           ")
+    print(r"               _~  -       ~_ | 1 :\ \      _-~-_ -  -_         ")
+    print(r"             _-   -          ~  |V: \ \  _-~     ~-_-  -_       ")
+    print(r"          _-~   -            /  | :  \ \            ~-_- -_     ")
+    print(r"       _-~    -   _.._      {   | : _-``               ~- _-_   ")
+    print(r"    _-~   -__..--~    ~-_  {   : \:}                            ")
+    print(r"  =~__.--~~              ~-_\  :  /                             ")
+    print(r"                             \ : /__                            ")
+    print(r"                            //`Y'--\\                           ")
+    print(r"                          <+       \\                           ")
+    print(r"                           \\      WWW                          ")
+    print(r"                            MMM                                 ")
 
     print("This is called a Pterasaur and is one earliest creatures to develop flight (not counting bugs)")
     a3=input("True or False, Pterasaurs are also called Avian-Dinosaurs (Dinosaurs that can fly) ")
@@ -199,21 +208,24 @@ def question_3():
         if a3.strip().lower() in ["f", "t", "true", "false"]:
             break
         else:
-            print("You have to answer true or false!")
+            print("\n" 
+                  "You have to answer true or false!")
             a3 = input("True or False, Pterasaurs are also called Avian-Dinosaurs (Dinosaurs that can fly) ")
 
             
     #Results for correct answer to question 3
     
     if a3.strip().lower() == answers["q3_a1"] or a3.strip().lower() == answers["q3_a2"]:
-        print("Correct! well done. Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. " \
+        print("\n"
+              "Correct! well done. Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. \n" 
         "They share a common ancester but evolved differently.")
         score += 1
 
     #Results for incorrect answer to question 3
 
     elif a3.strip().lower() == "t" or a3.strip().lower() == "true":
-        print("Incorrect! Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
+        print("\n"
+              "Incorrect! Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
 
     
 
@@ -224,7 +236,8 @@ def question_4():
 
     #Question 4
 
-    a4 = input("Next question, what is the name of the tail of a Stegosaurus. \n"
+    a4 = input("\n"
+               "Next question, what is the name of the tail of a Stegosaurus. \n"
         "a. Segamiser \n"
         "b. Thagomizer \n"
         "c. Gominizer \n")
@@ -235,17 +248,20 @@ def question_4():
         if a4.strip().lower() in ["a","b","c",]:
             break
         else:
-            a4 = input("That's not one of the answers. it has to be a. b. or c. ")
+            a4 = input("\n"
+                       "That's not one of the answers. it has to be a. b. or c. ")
 
     #Question 4 correct answer
 
     if a4.strip().lower() == answers["q4"]:
-        print("Nice job thats correct!")
+        print("\n"
+              "Nice job thats correct!")
         score += 1
 
     #Question 4 incorrect answer
     elif a4.strip().lower() in ["a", "c"]:
-        print("Incorrect, the answer was b. Thagomizer")
+        print("\n"
+              "Incorrect, the answer was b. Thagomizer")
 
     
 def question_5():
@@ -254,7 +270,8 @@ def question_5():
 
     #Question 5
 
-    a5 = input("The final question, and the hardest one yet, I'd be impressed if you got it. \n"
+    a5 = input("\n"
+               "The final question, and the hardest one yet, I'd be impressed if you got it. \n"
             "What period did the Baryonyx live \n"
             "a. Triassic \n"
             "b. Jurassic \n"
@@ -268,24 +285,28 @@ def question_5():
         if a5.strip().lower() in ["a","b","c",]:
             break
         else:
-            a5 = input("That's not one of the answers. it has to be a. b. or c. ")
+            a5 = input("\n"
+                       "That's not one of the answers. it has to be a. b. or c. ")
 
     #Question 5 correct answer
 
     if a5.strip().lower() == answers["q5"]:
-        print("Nice job thats correct!")
+        print("\n"
+              "Nice job thats correct!")
         score += 1
 
     #Question 4 incorrect answer
     elif a5.strip().lower() in ["a", "b"]:
-        print("Incorrect, the answer was c. Cretaceous")
+        print("\n"
+              "Incorrect, the answer was c. Cretaceous")
 
 
 def outro(name):
 
     #Ending
 
-    print(f"Congratulations {name}, you finished the dinosaur quiz! Your score was {score}/{QUESTIONS}")
+    print(f"\n"
+          f"Congratulations {name}, you finished the dinosaur quiz! Your score was {score}/{QUESTIONS}")
     replay = input("Would you like to play again? ")
     if replay in ["y", "yes", "yeah", "yup"]:
         return True
