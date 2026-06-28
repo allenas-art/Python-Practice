@@ -5,7 +5,7 @@ score = 0
 
 #answer dictionary
 
-answers = {"q1_a1": 225, "q1_a2": 275, "q2_1": "triassic", "q3_a1": "f", "q3_a2": "false", "q4": "b", "q5": "c"}
+answers = {"q1_a1": 225, "q1_a2": 275, "q21": "triassic", "q3_a1": "f", "q3_a2": "false", "q4": "b", "q5": "c"}
 
 
 def get_name():
@@ -17,6 +17,7 @@ def get_name():
 
     return name
 
+
 def intro():
 
     #intro
@@ -24,6 +25,7 @@ def intro():
     print("Hello and welcome to the Dinosaur quiz.")
     print(f"We will be using a time machine to go back to the age of dinosaurs" 
           f" and learn all we can through a quiz of {QUESTIONS} questions.")
+
 
 
 def intro2():
@@ -103,6 +105,7 @@ def question_1(name):
               "Incorrect! The answer was 250(million years ago), unfortunate, but that was a hard one I'm sure you'll get it next time")
         question_2_2()
 
+
 def question_2_1():
 
     global score
@@ -110,7 +113,7 @@ def question_2_1():
     #Second Question if first question is correct
 
     a21 = input("Now do you know which of the three periods of the Mezosoic era we have arrived in 250 million years in the past? ")
-    if a21.strip().lower() == answers["q2_1"] :
+    if a21.strip().lower() == answers["q21"] :
 
         #Results for correct answer to second & first question
 
@@ -123,6 +126,7 @@ def question_2_1():
     else:
         print("\n"
               "Incorrect, the answer was Triassic, then comes the Jurassic, and Cretaceous. Oh well you couldn't get a streak going.")
+
 
 def question_2_2():
 
@@ -169,6 +173,7 @@ def question_2_2():
     elif a22.strip().lower() == "c":
         print("\n"
               "Incorrect, the answer was a. The Triassic, then in order it goes The Jurassic, and The Cretaceous")
+
 
 
 
@@ -227,8 +232,6 @@ def question_3():
         print("\n"
               "Incorrect! Even though Pterasurs and Dinosaurs lived at the same time they are different things altogether. They share a common ancester but evolved differently.")
 
-    
-
 
 def question_4():
 
@@ -279,8 +282,6 @@ def question_5():
     
     #Question 5 n/a answer    
 
-    
-     
     while True:
         if a5.strip().lower() in ["a","b","c",]:
             break
